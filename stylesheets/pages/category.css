@@ -1,0 +1,332 @@
+/* 👇👇👇큰틀 */
+body {
+  display: flex;
+  flex-direction: column;
+  width: 1020px;
+  margin: 100px auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 1020px;
+  height: 1376px;
+}
+
+article {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 1020px;
+  height: 634px;
+  margin-bottom: 24px;
+}
+
+.house-article {
+  border-top: 1px solid var(--color-brown-300);
+  border-bottom: 1px solid var(--color-brown-300);
+}
+
+.kitchen-article {
+  border-top: 1px solid var(--color-green-700);
+  border-bottom: 1px solid var(--color-green-700);
+}
+
+/* 👇👇👇바디: 제목("Coupang") */
+h1 {
+  margin: 0px 765.11px 48px 9px;
+}
+
+/* 👇👇👇섹션: 제목("핫 트랜드 / 카테고리별 추천 제품") */
+
+section > header {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  top: 0px;
+  left: 0px;
+
+  margin-bottom: 24px;
+}
+
+h4 {
+  margin: 0px;
+}
+
+h2 {
+  margin: 0px;
+}
+
+h2 span:last-child {
+  color: var(--color-blue-600);
+}
+
+/* 👇👇👇아티클: 제목,바로가기,네비 */
+.title-and-nav {
+  width: 174px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-top: 48px;
+  margin-left: 24px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 115%;
+  color: var(--color-brown-300);
+}
+
+.direct {
+  margin-top: 8px;
+  margin-left: 24px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--color-gray-700);
+
+  background-image: url("/Mission-03/assets/icon/angle-right-default.svg");
+  background-repeat: no-repeat;
+  background-position: 55px;
+}
+
+h3 {
+  margin-top: 248px;
+  margin-left: 24px;
+  margin-bottom: 0px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 115%;
+}
+
+.tag {
+  position: absolute;
+  top: 382px;
+  left: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 124px;
+  height: 220px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 120%;
+
+  margin-top: 8px;
+}
+
+.four-word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 26px;
+  color: var(--color-brown-300);
+  border: 1px solid var(--color-gray-500);
+}
+
+.six-word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 94px;
+  height: 26px;
+  color: var(--color-brown-300);
+  border: 1px solid var(--color-gray-500);
+}
+
+.eight-word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 117px;
+  height: 26px;
+  color: var(--color-brown-300);
+  border: 1px solid var(--color-gray-500);
+}
+
+.three-word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 61px;
+  height: 26px;
+  color: var(--color-green-700);
+  border: 1px solid var(--color-gray-500);
+}
+
+.five-word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 83px;
+  height: 26px;
+  color: var(--color-green-700);
+  border: 1px solid var(--color-gray-500);
+}
+
+.seven-word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 106px;
+  height: 26px;
+  color: var(--color-green-700);
+  border: 1px solid var(--color-gray-500);
+}
+
+/* 👇👇👇캐러셀UI */
+.carousel {
+  position: relative;
+  width: 320px;
+  overflow: hidden;
+}
+
+.carousel-list {
+  display: flex;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-figurecaption {
+  position: absolute;
+  top: 483px;
+  left: 30px;
+  width: 260px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-brown-300);
+  color: var(--color-white);
+}
+
+.carousel-figurecaption-large {
+  margin-top: 19px;
+  margin-bottom: 8px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.carousel-figurecaption-small {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.carousel-controls button:nth-child(1) {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 597px;
+  left: 144px;
+  background-color: var(--color-gray-700);
+  border: none;
+  z-index: 1;
+}
+
+.carousel-controls button:nth-child(2) {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 597px;
+  right: 144px;
+  background-color: var(--color-gray-600);
+  border: none;
+  z-index: 1;
+}
+
+/* 👇👇👇상품*/
+.product-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 528px;
+  margin: 9px 0px 8px 16px;
+}
+
+.product-container::after {
+  position: absolute;
+  top: 316.53px;
+  left: 485px;
+  content: "";
+  border-bottom: 1px solid var(--color-gray-600);
+  width: 528px;
+  top: 316.53px;
+}
+
+.product {
+  width: 160px;
+  height: 300px;
+}
+
+.product:nth-child(1) {
+  margin-bottom: 16px;
+}
+
+.product:nth-child(2) {
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.product:nth-child(3) {
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.product:nth-child(5) {
+  margin-left: 16px;
+}
+.product:nth-child(6) {
+  margin-left: 16px;
+}
+
+.product-footer {
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.price-and-delivery {
+  margin-top: 12px;
+}
+
+.price-info {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: var(--color-red-500);
+}
+
+.large-font {
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: Bold;
+  font-size: 22px;
+  line-height: 120%;
+}
+
+.for-screen-reader {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+}
