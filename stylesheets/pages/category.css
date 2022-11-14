@@ -90,7 +90,7 @@ h2 span:last-child {
   line-height: 120%;
   color: var(--color-gray-700);
 
-  background-image: url("/Mission-03/assets/icon/angle-right-default.svg");
+  background-image: url("/assets/icon/angle-right-default.svg");
   background-repeat: no-repeat;
   background-position: 55px;
 }
