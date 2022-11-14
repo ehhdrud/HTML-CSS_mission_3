@@ -14,9 +14,9 @@ section {
 }
 
 article {
-  position: relative;
   display: flex;
   flex-direction: row;
+  position: relative;
   width: 1020px;
   height: 634px;
   margin-bottom: 24px;
@@ -42,11 +42,9 @@ h1 {
 section > header {
   display: flex;
   flex-direction: column;
-
   position: relative;
   top: 0px;
   left: 0px;
-
   margin-bottom: 24px;
 }
 
@@ -62,44 +60,40 @@ h2 span:last-child {
   color: var(--color-blue-600);
 }
 
-/* 👇👇👇아티클: 제목,바로가기,네비 */
+/* 👇👇👇아티클: 제목,바로가기,내비게이션 */
 .title-and-nav {
-  width: 174px;
   display: flex;
   flex-direction: column;
+  width: 174px;
 }
 
 .title {
   margin-top: 48px;
   margin-left: 24px;
-
+  color: var(--color-brown-300);
   font-family: "Noto Sans KR", sans-serif;
   font-style: Medium;
   font-size: 24px;
   line-height: 115%;
-  color: var(--color-brown-300);
 }
 
 .direct {
   margin-top: 8px;
   margin-left: 24px;
-
+  background-image: url("/assets/icon/angle-right-default.svg");
+  background-repeat: no-repeat;
+  background-position: 55px;
+  color: var(--color-gray-700);
   font-family: "Noto Sans KR", sans-serif;
   font-style: Bold;
   font-size: 14px;
   line-height: 120%;
-  color: var(--color-gray-700);
-
-  background-image: url("/assets/icon/angle-right-default.svg");
-  background-repeat: no-repeat;
-  background-position: 55px;
 }
 
 h3 {
   margin-top: 248px;
   margin-left: 24px;
   margin-bottom: 0px;
-
   font-family: "Noto Sans KR", sans-serif;
   font-style: Medium;
   font-size: 18px;
@@ -107,22 +101,19 @@ h3 {
 }
 
 .tag {
-  position: absolute;
-  top: 382px;
-  left: 24px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: absolute;
+  top: 382px;
+  left: 24px;
   width: 124px;
   height: 220px;
-
+  margin-top: 8px;
   font-family: "Noto Sans KR", sans-serif;
   font-style: Regular;
   font-size: 12px;
   line-height: 120%;
-
-  margin-top: 8px;
 }
 
 .four-word {
@@ -131,8 +122,8 @@ h3 {
   align-items: center;
   width: 72px;
   height: 26px;
-  color: var(--color-brown-300);
   border: 1px solid var(--color-gray-500);
+  color: var(--color-brown-300);
 }
 
 .six-word {
@@ -141,8 +132,8 @@ h3 {
   align-items: center;
   width: 94px;
   height: 26px;
-  color: var(--color-brown-300);
   border: 1px solid var(--color-gray-500);
+  color: var(--color-brown-300);
 }
 
 .eight-word {
@@ -151,8 +142,8 @@ h3 {
   align-items: center;
   width: 117px;
   height: 26px;
-  color: var(--color-brown-300);
   border: 1px solid var(--color-gray-500);
+  color: var(--color-brown-300);
 }
 
 .three-word {
@@ -161,8 +152,8 @@ h3 {
   align-items: center;
   width: 61px;
   height: 26px;
-  color: var(--color-green-700);
   border: 1px solid var(--color-gray-500);
+  color: var(--color-green-700);
 }
 
 .five-word {
@@ -171,8 +162,8 @@ h3 {
   align-items: center;
   width: 83px;
   height: 26px;
-  color: var(--color-green-700);
   border: 1px solid var(--color-gray-500);
+  color: var(--color-green-700);
 }
 
 .seven-word {
@@ -181,15 +172,15 @@ h3 {
   align-items: center;
   width: 106px;
   height: 26px;
-  color: var(--color-green-700);
   border: 1px solid var(--color-gray-500);
+  color: var(--color-green-700);
 }
 
-/* 👇👇👇캐러셀UI */
+/* 👇👇👇캐러셀 */
 .carousel {
   position: relative;
-  width: 320px;
   overflow: hidden;
+  width: 320px;
 }
 
 .carousel-list {
@@ -201,14 +192,14 @@ h3 {
 }
 
 .carousel-figurecaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   top: 483px;
   left: 30px;
   width: 260px;
   height: 90px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: var(--color-brown-300);
   color: var(--color-white);
 }
@@ -232,27 +223,27 @@ h3 {
 }
 
 .carousel-controls button:nth-child(1) {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
   position: absolute;
   top: 597px;
   left: 144px;
-  background-color: var(--color-gray-700);
-  border: none;
   z-index: 1;
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-gray-700);
 }
 
 .carousel-controls button:nth-child(2) {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
   position: absolute;
   top: 597px;
   right: 144px;
-  background-color: var(--color-gray-600);
-  border: none;
   z-index: 1;
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-gray-600);
 }
 
 /* 👇👇👇상품*/
@@ -268,10 +259,10 @@ h3 {
   position: absolute;
   top: 316.53px;
   left: 485px;
-  content: "";
   border-bottom: 1px solid var(--color-gray-600);
   width: 528px;
   top: 316.53px;
+  content: "";
 }
 
 .product {
@@ -324,6 +315,7 @@ h3 {
   line-height: 120%;
 }
 
+/* 👇👇👇sr-only */
 .for-screen-reader {
   position: absolute;
   overflow: hidden;
