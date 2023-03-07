@@ -1,4 +1,4 @@
-/* 👇👇👇큰틀 */
+/* 큰 틀 */
 body {
   display: flex;
   flex-direction: column;
@@ -32,12 +32,12 @@ article {
   border-bottom: 1px solid var(--color-green-700);
 }
 
-/* 👇👇👇바디: 제목("Coupang") */
-h1 {
+/* 바디: 제목("Coupang") */
+svg {
   margin: 0px 765.11px 48px 9px;
 }
 
-/* 👇👇👇섹션: 제목("핫 트랜드 / 카테고리별 추천 제품") */
+/* 섹션: 제목("핫 트랜드 / 카테고리별 추천 제품") */
 
 section > header {
   display: flex;
@@ -48,19 +48,22 @@ section > header {
   margin-bottom: 24px;
 }
 
-h4 {
+header > span {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+header h1 {
+  font-size: 1.5em;
+  font-weight: 700;
   margin: 0px;
 }
 
-h2 {
-  margin: 0px;
-}
-
-h2 span:last-child {
+header span:last-child {
   color: var(--color-blue-600);
 }
 
-/* 👇👇👇아티클: 제목,바로가기,내비게이션 */
+/* 아티클: 제목,바로가기,내비게이션 */
 .title-and-nav {
   display: flex;
   flex-direction: column;
@@ -176,7 +179,7 @@ h3 {
   color: var(--color-green-700);
 }
 
-/* 👇👇👇캐러셀 */
+/* 캐러셀 */
 .carousel {
   position: relative;
   overflow: hidden;
@@ -246,7 +249,7 @@ h3 {
   background-color: var(--color-gray-600);
 }
 
-/* 👇👇👇상품*/
+/* 상품 */
 .product-container {
   display: flex;
   flex-direction: row;
