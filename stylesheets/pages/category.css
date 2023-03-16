@@ -1,4 +1,4 @@
-/* 큰 틀 */
+/* 1. 전체 */
 body {
   display: flex;
   flex-direction: column;
@@ -6,6 +6,19 @@ body {
   margin: 100px auto;
 }
 
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+/* 2. 헤더 */
+svg {
+  margin: 0px 765.11px 48px 9px;
+}
+
+/* 3. 섹션 */
 section {
   display: flex;
   flex-direction: column;
@@ -13,31 +26,7 @@ section {
   height: 1376px;
 }
 
-article {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  width: 1020px;
-  height: 634px;
-  margin-bottom: 24px;
-}
-
-.house-article {
-  border-top: 1px solid var(--color-brown-300);
-  border-bottom: 1px solid var(--color-brown-300);
-}
-
-.kitchen-article {
-  border-top: 1px solid var(--color-green-700);
-  border-bottom: 1px solid var(--color-green-700);
-}
-
-/* 바디: 제목("Coupang") */
-svg {
-  margin: 0px 765.11px 48px 9px;
-}
-
-/* 섹션: 제목("핫 트랜드 / 카테고리별 추천 제품") */
+/* 3.1. 섹션 - 헤더  */
 
 section > header {
   display: flex;
@@ -63,7 +52,27 @@ header span:last-child {
   color: var(--color-blue-600);
 }
 
-/* 아티클: 제목,바로가기,내비게이션 */
+/* 3.2. 섹션 - 아티클  */
+article {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 1020px;
+  height: 634px;
+  margin-bottom: 24px;
+}
+
+.house-article {
+  border-top: 1px solid var(--color-brown-300);
+  border-bottom: 1px solid var(--color-brown-300);
+}
+
+.kitchen-article {
+  border-top: 1px solid var(--color-green-700);
+  border-bottom: 1px solid var(--color-green-700);
+}
+
+/* 3.2.1. 섹션 - 아티클 - 제목,바로가기,내비게이션 */
 .title-and-nav {
   display: flex;
   flex-direction: column;
@@ -179,7 +188,7 @@ h3 {
   color: var(--color-green-700);
 }
 
-/* 캐러셀 */
+/* 3.2.2. 섹션 - 아티클 - 캐러셀 */
 .carousel {
   position: relative;
   overflow: hidden;
@@ -249,7 +258,7 @@ h3 {
   background-color: var(--color-gray-600);
 }
 
-/* 상품 */
+/* 3.2.3. 섹션 - 아티클 - 컨테이너 */
 .product-container {
   display: flex;
   flex-direction: row;
@@ -316,12 +325,4 @@ h3 {
   font-style: Bold;
   font-size: 22px;
   line-height: 120%;
-}
-
-/* 👇👇👇sr-only */
-.for-screen-reader {
-  position: absolute;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
 }
